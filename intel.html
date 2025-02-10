@@ -1,0 +1,78 @@
+import React from 'react';
+import { Mail, Phone, Instagram, Send } from 'lucide-react';
+
+const Portfolio = () => {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Main Content */}
+      <div className="max-w-3xl mx-auto px-4 py-8">
+        {/* Profile Section */}
+        <div className="text-center mb-12">
+          <img 
+            src="/api/placeholder/200/200" 
+            alt="Elyor Xoliqulov" 
+            className="w-40 h-40 rounded-full mx-auto mb-4 object-cover"
+          />
+          <h1 className="text-2xl font-bold text-gray-900 mb-2">Elyor Xoliqulov</h1>
+          <p className="text-gray-600 mb-4">Xalqaro huquq fakulteti talabasi</p>
+          <p className="text-gray-600">
+            Jahon iqtisodiyoti va diplomatiya universiteti
+          </p>
+        </div>
+
+        {/* Contact Section */}
+        <div className="max-w-md mx-auto bg-gray-50 rounded p-6 mb-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Bog'lanish uchun</h2>
+          <div className="space-y-3">
+            <div className="flex items-center">
+              <Phone className="text-gray-400 mr-3" size={20} />
+              <a href="tel:+998994414140" className="text-gray-600">
+                +998 99 441 41 40
+              </a>
+            </div>
+            <div className="flex items-center">
+              <Mail className="text-gray-400 mr-3" size={20} />
+              <a href="mailto:xoliqulovelyor090@gmail.com" className="text-gray-600">
+                xoliqulovelyor090@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center">
+              <Instagram className="text-gray-400 mr-3" size={20} />
+              <a href="https://instagram.com/el.khalikulov" className="text-gray-600">
+                @el.khalikulov
+              </a>
+            </div>
+            <div className="flex items-center">
+              <Send className="text-gray-400 mr-3" size={20} />
+              <a href="https://t.me/elyorrs" className="text-gray-600">
+                @elyorrs
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Education Section */}
+        <div className="max-w-md mx-auto">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">Ta'lim</h2>
+          <div className="bg-gray-50 rounded p-6">
+            <h3 className="font-medium text-gray-900 mb-2">
+              Jahon iqtisodiyoti va diplomatiya universiteti
+            </h3>
+            <p className="text-gray-600">Xalqaro huquq fakulteti</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Simple Footer */}
+      <footer className="border-t mt-12">
+        <div className="max-w-3xl mx-auto px-4 py-4">
+          <p className="text-center text-gray-600 text-sm">
+            © {new Date().getFullYear()} Elyor Xoliqulov
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Portfolio;
